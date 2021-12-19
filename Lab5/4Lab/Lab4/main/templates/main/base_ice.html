@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мороженное</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 fst-italic">{% block name_ice  %}{% endblock %}</h1>
+          <div class="col-md-5">
+              {% block img_ice  %}{% endblock %}
+          </div>
+          <p class="lead my-3">{% block info_ice  %}{% endblock %}</p>
+          <p class="lead mb-0"><a href="{% url 'home' %}" class="text-white fw-bold">Главная</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
